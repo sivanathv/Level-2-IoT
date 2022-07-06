@@ -1,22 +1,61 @@
 # Level 2: Introduction to IoT
-## Introduction to Arduino
-Arduino is an open-source electronics platform based on easy-to-use hardware and software. Arduino boards are able to read inputs - light on a sensor, a finger on a button, or a Twitter message - and turn it into an output - activating a motor, turning on an LED, publishing something online. You can tell your board what to do by sending a set of instructions to the microcontroller on the board. To do so you use the Arduino programming language (based on Wiring), and the Arduino Software (IDE), based on Processing.
+## Introduction to NodeMCU
+<Content>
+![Caption](Img link "Hover name")
 
-![Photo by Harrison Broadbent on Unsplash](https://user-images.githubusercontent.com/42141371/147653714-ae3bd4f6-3d1e-40ab-980a-969db8f7584c.png "Arduino UNO")
+## Introduction to Blynk
+<Content>
+![Caption](Img link "Hover name")
+
+## Requirements
+<Content>
 
 ## Experiments
-  1. [Hello World LED Blinking](#blink)
-  2. [Traffic Light](#traffic)
-  3. [LED Chasing Effect](#chase)
-  4. [Button Controlled LED](#button)
-  5. [Buzzer](#buzzer)
-  6. [RGB LED](#rgb)
-  7. [LDR Light Sensor](#ldr)
-  8. [Flame Sensor](#flame)
-  9. [LM35 Temperature Sensor](#lm35)
-  10. [IR Remote Control Using TSOP](#ir)
-  11. [Potentiometer Analog Value Reading](#pot)
-  12. [7-Segment Display](#7)
-  13. [Assignments](#assign)
+  1. [LED Control using Blynk app](#blynk)
+  2. [head.](#traffic)
+  3. [head.](#chase)
+  4. [head.](#button)
+  5. [head.](#buzzer)
+  6. [head.](#rgb)
+  7. [head.](#ldr)
+  8. [head.](#flame)
+  9. [head.](#lm35)
+  10. [head.](#ir)
+  11. [head.](#pot)
 
-<a name='blink'></a>
+<a name='blynk'></a>
+## LED Control using Blynk app
+LED is made ON and OFF using a switch in the Blynk IoT platform
+## Code
+```c++
+#define BLYNK_TEMPLATE_ID   "TMPLHdKB6u23"
+#define BLYNK_DEVICE_NAME   "LED control"
+#define BLYNK_AUTH_TOKEN    "GK0ilSKAGX1_fz0oAJOw8psfizAcbc2h"
+
+#define BLYNK_PRINT Serial
+#include <ESP8266WiFi.h>  
+#include <BlynkSimpleEsp8266.h>
+ 
+
+char auth[] = BLYNK_AUTH_TOKEN;
+char ssid[] = "m31";  // Wifi Username
+char pass[] = "password";  // Wifi password
+
+int ledpin = D4; //LED is connected to D4 pin of NodeMCU
+void setup()
+{     
+  Serial.begin(115200);
+  Blynk.begin(auth, ssid, pass);    
+  pinMode(ledpin,OUTPUT);
+}
+
+BLYNK_WRITE(V0) //LED control using virtual pin
+{   
+  int value = param.asInt(); // Get value as integer
+  digitalWrite(ledpin, value);}
+
+void loop()
+{
+  Blynk.run(); 
+}
+```
