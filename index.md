@@ -84,7 +84,6 @@ LED is made ON and OFF using a switch in the Arduino IoT platform
 */
 
 #include "thingProperties.h"
-#include <ESP8266WiFi.h>  //Include the library
 
 void setup() {
   // Initialize serial and wait for port to open:
