@@ -16,7 +16,7 @@
 
 ## Experiments
   1. [LED Control using Blynk app](#blynk)
-  2. [head.](#traffic)
+  2. [LED Control using Arduino IoT Cloud](#arduino)
   3. [head.](#chase)
   4. [head.](#button)
   5. [head.](#buzzer)
@@ -61,5 +61,77 @@ BLYNK_WRITE(V0) //LED control using virtual pin
 void loop()
 {
   Blynk.run(); 
+}
+```
+
+<a name='blynk'></a>
+## LED Control using Arduino IoT Cloud
+LED is made ON and OFF using a switch in the Arduino IoT platform
+## Code
+```c++
+/* 
+  Our code is added to the predefined arduino sketch
+
+  Arduino IoT Cloud Variables description
+
+  The following variables are automatically generated and updated when changes are made to the Thing
+
+  bool led_control;
+
+  Variables which are marked as READ/WRITE in the Cloud Thing will also have functions
+  which are called when their values are changed from the Dashboard.
+  These functions are generated with the Thing and added at the end of this sketch.
+*/
+
+#include "thingProperties.h"
+#include <ESP8266WiFi.h>  //Include the library
+
+void setup() {
+  // Initialize serial and wait for port to open:
+  Serial.begin(9600);
+  pinMode(D4, OUTPUT); //D4 of NodeMCU is connected to the LED positive
+  // This delay gives the chance to wait for a Serial Monitor without blocking if none is found
+  delay(1500); 
+
+  // Defined in thingProperties.h
+  initProperties();
+
+  // Connect to Arduino IoT Cloud
+  ArduinoCloud.begin(ArduinoIoTPreferredConnection);
+  
+  /*
+     The following function allows you to obtain more information
+     related to the state of network and IoT Cloud connection and errors
+     the higher number the more granular information you’ll get.
+     The default is 0 (only errors).
+     Maximum is 4
+ */
+  setDebugMessageLevel(2);
+  ArduinoCloud.printDebugInfo();
+}
+
+void loop() {
+  ArduinoCloud.update();
+  // Our code here 
+  
+  
+}
+
+
+
+/*
+  Since LedControl is READ_WRITE variable, onLedControlChange() is
+  executed every time a new value is received from IoT Cloud.
+*/
+void onLedControlChange()  //To control LED
+{
+  if (led_control == 1)
+  {
+    digitalWrite(D4, HIGH);
+  }
+  else
+  {
+    digitalWrite(D4, LOW);
+  }
 }
 ```
