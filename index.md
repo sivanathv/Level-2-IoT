@@ -64,7 +64,7 @@ void loop()
 }
 ```
 
-<a name='blynk'></a>
+<a name='arduino'></a>
 ## LED Control using Arduino IoT Cloud
 LED is made ON and OFF using a switch in the Arduino IoT platform
 ## Code
@@ -110,14 +110,11 @@ void setup() {
   ArduinoCloud.printDebugInfo();
 }
 
-void loop() {
+void loop()
+{
   ArduinoCloud.update();
   // Our code here 
-  
-  
 }
-
-
 
 /*
   Since LedControl is READ_WRITE variable, onLedControlChange() is
