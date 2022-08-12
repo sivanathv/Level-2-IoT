@@ -749,7 +749,7 @@ Node-RED is a flow-based development tool for visual programming developed origi
 
 Node-RED uses MQTT communication protocol and provides a web browser-based flow editor, which can be used to create JavaScript functions. Elements of applications can be saved or shared for re-use. The runtime is built on Node.js. The flows created in Node-RED are stored using JSON. Since version 0.14, MQTT nodes can make properly configured TLS connections.
 
-For detailed information: *[MQTT site](https://mqtt.org/)  |  [MQTT video](https://www.youtube.com/watch?v=oskVCBq8Fsk)*
+For detailed information: *[MQTT site](https://mqtt.org/)*  |  *[MQTT video](https://www.youtube.com/watch?v=oskVCBq8Fsk)*
 
 <a name='node'></a>
 
