@@ -24,10 +24,10 @@ Both boards are programmed with the Arduino IDE which is an advantage for those 
 | Working Temperature   |         -40°C to 125°C         |                -40°C to 125°C               |
 
 ### Datasheet
-#### ESP8266
+### ESP8266
 ![ESP8266](https://raw.githubusercontent.com/sivanathv/Level-2-IoT/main/Images/NodeMCU-Pinout.png "ESP8266")
 
-#### ESP32
+### ESP32
 ![ESP32](https://raw.githubusercontent.com/sivanathv/Level-2-IoT/3fa03fde298edb4fc30c120ce954749397103535/Images/ESP32%20Pinout.png "ESP32")
 
 #### Note: Here, all the experiments are carried out using NodeMCU except that require bluetooth connectivity, where ESP32 is used. All the experiments can be done using ESP32. If you are using ESP32, check the arduino libraries in the code before compiling. 
