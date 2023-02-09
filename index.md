@@ -95,7 +95,7 @@ void loop()
 }
 ```
 ## Video
-[![LED control using Blynk app](https://user-images.githubusercontent.com/42141371/217733228-2e4ea8f4-b822-49c3-bbdb-962656e8492d.png)](https://user-images.githubusercontent.com/42141371/217731242-9cbaae2d-cb69-4c29-831b-b7cca0f0eb98.mp4)
+[![LED control using Blynk app](https://user-images.githubusercontent.com/42141371/217741365-61b0f8c3-d539-463c-a647-4f64867b934b.png)](https://user-images.githubusercontent.com/42141371/217731242-9cbaae2d-cb69-4c29-831b-b7cca0f0eb98.mp4)
 
 <a name='arduino'></a>
 
@@ -159,6 +159,7 @@ void onLedControlChange()  //To control LED
 }
 ```
 ## Video
+[![LED control using Arduino IoT](https://user-images.githubusercontent.com/42141371/217741735-5b0db98c-1182-463c-8638-2d573a874f3b.png)](https://user-images.githubusercontent.com/42141371/217748525-40858854-747d-4d75-858f-0169719d91fb.mp4)
 
 <a name='soil'></a>
 
@@ -203,6 +204,7 @@ void loop() {
 }
 ```
 ## Video
+[![Soil moisture sensor](https://user-images.githubusercontent.com/42141371/217750484-b7bdc5e0-3261-4438-9076-c5e08795f7ee.png)](https://user-images.githubusercontent.com/42141371/217750595-325107b7-763a-4988-bbc5-be0728217083.mp4)
 
 <a name='ldr'></a>
 
@@ -248,6 +250,7 @@ void loop() {
 }
 ```
 ## Video
+[![Light sensing using LDR](https://user-images.githubusercontent.com/42141371/217750726-afaf87ef-34e1-4db4-82fc-a600b1d3ee64.png)](https://user-images.githubusercontent.com/42141371/217750830-32d46ede-29df-4009-a72d-432c53467ea1.mp4)
 
 <a name='ultra'></a>
 
@@ -304,6 +307,7 @@ void loop() {
 }
 ```
 ## Video
+[![Ultrasonic sensor](https://user-images.githubusercontent.com/42141371/217750958-ba437852-2362-492a-8ee4-5cb842a7a48f.png)](https://user-images.githubusercontent.com/42141371/217751086-f79275d1-c5a8-42ee-ad94-f4fdb8e5cb95.mp4)
 
 <a name='ir'></a>
 
@@ -354,6 +358,7 @@ void loop() {
 }
 ```
 ## Video
+[![IR detection](https://user-images.githubusercontent.com/42141371/217751440-318de00b-d28b-4599-adfc-bf38b70aab50.png)](https://user-images.githubusercontent.com/42141371/217751528-0b0027b6-0b85-4cb9-ab24-8b05418a08e2.mp4)
 
 ## Introduction to MIT App Inventor
 ![MIT](https://raw.githubusercontent.com/sivanathv/Level-2-IoT/main/Images/MIT.png "MIT App Inventor")
@@ -439,8 +444,9 @@ For detailed explanation, watch the video: **[Bluetooth LED Control](https://www
 
 A screenshot of the code block is provided below:
 ![Codeblock1](https://raw.githubusercontent.com/sivanathv/Level-2-IoT/main/Images/Bluetooth.png "Code block")
-## Video
 
+## Video
+[![Bluetooth control](https://user-images.githubusercontent.com/42141371/217751810-069cdea0-3447-441f-8a3c-2c13b63da5af.png)](https://user-images.githubusercontent.com/42141371/217751876-a912bde1-2117-46aa-ba47-950c25ea55fc.mp4)
 
 <a name='bi'></a>
 
@@ -554,8 +560,9 @@ For the MIT App Inventor code, download: **[MIT App code](https://github.com/mo-
 
 A screenshot of the code block is provided below:
 ![Codeblock2](https://raw.githubusercontent.com/sivanathv/Level-2-IoT/main/Images/Bidirectional.png "Code block")
-## Video
 
+## Video
+[![Bidirectional communication](https://user-images.githubusercontent.com/42141371/217752045-6114095b-7320-41a6-993d-bbd6d62c1443.png)](https://user-images.githubusercontent.com/42141371/217752180-2ce675a3-06b4-484b-83ff-a0ea615e3385.mp4)
 
 <a name='reli'></a>
 
@@ -640,7 +647,9 @@ For the MIT App Inventor code, download: **[MIT App code](https://github.com/mo-
 
 A screenshot of the code block is provided below:
 ![Codeblock3](https://raw.githubusercontent.com/sivanathv/Level-2-IoT/main/Images/Reliable.png "Code block")
+
 ## Video
+[![Reliable communication](https://user-images.githubusercontent.com/42141371/217752379-beda9195-25dc-4b4f-adbb-02618417a8fe.png)](https://user-images.githubusercontent.com/42141371/217752466-147e1a47-e8b2-4c1f-8633-bb4fbf687a56.mp4)
 
 
 ## Introduction to Firebase
@@ -737,6 +746,7 @@ void loop()\
 }
 ```
 ## Video
+[![Firebase](https://user-images.githubusercontent.com/42141371/217752954-b3843819-c3f6-42f4-b712-893f59194153.png)](https://user-images.githubusercontent.com/42141371/217752991-cffdb420-944b-4ff3-91e9-abe3f7b5eae6.mp4)
 
 
 ## Introduction to MQTT protocol and Node-Red
