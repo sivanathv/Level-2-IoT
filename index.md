@@ -95,7 +95,7 @@ void loop()
 }
 ```
 ## Video
-[![LED control using Blynk app]](https://user-images.githubusercontent.com/42141371/217731242-9cbaae2d-cb69-4c29-831b-b7cca0f0eb98.mp4)
+[![LED control using Blynk app]()](https://user-images.githubusercontent.com/42141371/217731242-9cbaae2d-cb69-4c29-831b-b7cca0f0eb98.mp4)
 
 <a name='arduino'></a>
 
